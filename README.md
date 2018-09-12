@@ -1,2 +1,12 @@
 # k8s-eksctl
-Collection of notes and steps for deploying K8s using Amazon EKS
+
+Using [`eksctl`](https://github.com/weaveworks/eksctl) to deploy an EKS cluster.
+
+Deploy to `us-east-1`:
+
+```
+$ eksctl create cluster --region us-east-1 --zones=us-east-1b,us-east-1c,us-east-1d --auto-kubeconfig
+```
+
+> There's a problem deploying to **us-east-1e** hence the need to explicitly define the AZs.
+
