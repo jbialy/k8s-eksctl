@@ -10,3 +10,9 @@ $ eksctl create cluster --region us-east-1 --zones=us-east-1b,us-east-1c,us-east
 
 > There's a problem deploying to **us-east-1e** hence the need to explicitly define the AZs. By default, the above will create a two node cluster.
 
+Delete:
+
+```
+$ eksctl delete cluster --name=scrumptious-sheepdog-1536846573
+```
+
