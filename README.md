@@ -6,7 +6,6 @@ Install `aws-iam-authenticator`:
 
 ```
 go get -u -v github.com/kubernetes-sigs/aws-iam-authenticator/cmd/aws-iam-authenticator
-
 ```
 
 and `eksctl`:
@@ -18,7 +17,7 @@ brew install eksctl
 Deploy to `us-east-1`:
 
 ```
-$ eksctl create cluster --region us-east-1 --zones=us-east-1b,us-east-1c,us-east-1d --node-type=t2.medium --auto-kubeconfig
+$ eksctl create cluster --region us-east-1 --zones=us-east-1b,us-east-1c,us-east-1d --node-type=t2.medium
 ```
 
 > There's a problem deploying to **us-east-1e** hence the need to explicitly define the AZs. By default, the above will create a two node cluster.
