@@ -2,6 +2,19 @@
 
 Using [`eksctl`](https://github.com/weaveworks/eksctl) to deploy an EKS cluster.
 
+Install `aws-iam-authenticator`:
+
+```
+go get -u -v github.com/kubernetes-sigs/aws-iam-authenticator/cmd/aws-iam-authenticator
+
+```
+
+and `eksctl`:
+
+```
+brew install eksctl
+```
+
 Deploy to `us-east-1`:
 
 ```
